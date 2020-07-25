@@ -6,8 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * <p>
- *     Spring Fundamentals course in Pluralsight by Bryan Hanson. It was with the Corporate Subscription
- *     offered by the Compliance BU of Citi Corp Services, Pune.
+ *     Spring Fundamentals course in Pluralsight by Bryan Hanson. 
  * </p>
  * <p>
  *     Course URL: https://app.pluralsight.com/library/courses/spring-framework-spring-fundamentals/
