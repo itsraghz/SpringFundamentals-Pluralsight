@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="speakerRepository"
+          class="com.pluralsight.repository.HibernateSpeakerRepositoryImpl">
+    </bean>
+
+    <!-- ========================================================================= -->
+    <!--                        Setter Injection via Property                      -->
+    <!-- ========================================================================= -->
+    <!--<bean name="speakerService" class="com.pluralsight.service.SpeakerServiceImpl">
+        <property name="spekaerRepository" ref="speakerRepository"/>
+    </bean>-->
+
+    <!-- ========================================================================= -->
+    <!--                        Constructor Injection                              -->
+    <!-- ========================================================================= -->
+    <!--<bean name="speakerService" class="com.pluralsight.service.SpeakerServiceImpl">
+    <constructor-arg index="0" ref="speakerRepository"/>
+    </bean>-->
+
+    <!-- ========================================================================= -->
+    <!--                        Autowire by Constructor                            -->
+    <!-- ========================================================================= -->
+    <!--<bean name="speakerService" class="com.pluralsight.service.SpeakerServiceImpl" autowire="constructor">
+    </bean>-->
+
+    <!-- ========================================================================= -->
+    <!--                        Autowire byType for Setter                         -->
+    <!-- ========================================================================= -->
+    <bean name="speakerService" class="com.pluralsight.service.SpeakerServiceImpl" autowire="byType">
+    </bean>
+
+    <!-- ========================================================================= -->
+    <!--                        Autowire byType for Setter                         -->
+    <!-- ========================================================================= -->
+    <!--<bean name="speakerService" class="com.pluralsight.service.SpeakerServiceImpl" autowire="byName">
+    </bean>-->
+
+</beans>
